@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Update
+        run: sudo apt-get update
+
+      - name: Install gcc
+        run: sudo apt-get install -y gcc
+
+      - name: Change to project directory
+        run: cd src/multimodule
+
+      - name: Build
+        run: make -C src/multimodule
