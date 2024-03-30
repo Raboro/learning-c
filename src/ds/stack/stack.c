@@ -29,8 +29,8 @@ int pop(struct Stack *stack)
     {
         return -1;
     }
-
-    int pop_value = stack->data[stack->size--];
+    stack->size--;
+    int pop_value = stack->data[stack->size];
     return pop_value;
 }
 
