@@ -7,3 +7,7 @@ default:
 clean:
 	@rm -f palindrome.o
 	@rm -f stack.o
+
+str:
+	@gcc -o str str.c 
+	@rm -f str.o
