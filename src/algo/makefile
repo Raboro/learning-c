@@ -11,3 +11,7 @@ clean:
 str:
 	@gcc -o str str.c 
 	@rm -f str.o
+
+bit:
+	@gcc -o bit bit.c 
+	@rm -f bit.o
